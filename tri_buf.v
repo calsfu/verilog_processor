@@ -1,13 +1,11 @@
 module tri_buf (a,b,enable);
 	input[3:0] a;
-	output [3:0] reg b;
+	output reg [3:0]  b;
 	input enable;
-always @ (enable or a) begin
-	if (enable) begin
-		b = a;
-	end else begin
-		b =1’bz;
+	
+	always @ (enable or a) begin
+		if (enable)	b = a;
+		else b = 3'bzzz;
 	end
-end
 
 endmodule
