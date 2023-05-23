@@ -3,6 +3,5 @@ set_global_assignment -name IP_TOOL_VERSION "22.1"
 set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
 set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "my_rom0.v"]
 set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "my_rom0.bsf"]
-set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "my_rom0_inst.v"]
 set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "my_rom0_bb.v"]
 set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "my_rom0.cmp"]

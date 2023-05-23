@@ -5,7 +5,7 @@ module tb;
 	reg clk_in, reset_in, start_in;
 	wire[15:0] bus;
 
-	wire[22:0] command;
+	wire[24:0] command;
 	
 	processor proc(.clk(clk_in),.rst(reset_in),.start(start_in), .bus(bus), .command(command));
 	
